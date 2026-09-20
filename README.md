@@ -34,6 +34,7 @@ LSTM-Stock-Predictor-AI-Industry/
 ├── market_collect.py      # ETF 与股票池行情采集 + 环节等权指数
 ├── feature_builder.py     # 特征对齐 + 传导相关性分析
 ├── lstm_predict.py        # 多特征 LSTM 预测 ETF 价格
+├── predict_stock.py       # 多特征 LSTM 预测股票池任意个股（命令行指定代码）
 ├── stock_picker.py        # 选股打分（情绪 + 动量）
 ├── report.py              # 可视化报告（走势/热力图/指数）
 ├── data/
@@ -59,6 +60,7 @@ python feature_builder.py   # 4. 特征对齐 + 传导分析
 python lstm_predict.py      # 5. 训练 LSTM，预测 ETF 未来 30 个交易日
 python stock_picker.py      # 6. 生成选股榜单
 python report.py            # 7. 生成可视化报告
+python predict_stock.py 300308   # 8.（可选）预测股票池任意个股，测试报告见 docs/
 ```
 
 > 全部配置（环节/关键词/股票/ETF/时间窗）在 `industry_config.py` 修改，无需改动各模块代码。
