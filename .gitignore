@@ -1,0 +1,39 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# PyTorch / model checkpoints
+*.pt
+*.pth
+*.ckpt
+runs/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# OneDrive / temp
+~$*
+*.tmp
+_debug*
